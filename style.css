@@ -171,6 +171,7 @@ body {
 
 .cards-container .card {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   background-color: white;
   border-left: 8px solid #333;
@@ -189,7 +190,7 @@ body {
 }
 
 .card .card-actions {
-  align-self: flex-end;
+  align-self: end;
   padding-top: 1rem;
   color: #999;
 }
