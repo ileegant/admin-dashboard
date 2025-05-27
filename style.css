@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER STYLES */
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.header input {
+  width: 30rem;
+  height: 2rem;
+  background-color: #dbe2ec;
+  padding-left: 1rem;
+  border: none;
+  accent-color: #999;
+  border-radius: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.action-buttons button {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+  transition: all .2s ease;
+}
+
+/* NAVIGATION STYLES */
+
+.sidebar {
+  background-color: aqua;
+  font-size: 3rem;
+}
+
+/* CONTENT STYLES */
+
+.content {
+  height: 100vh;
+  background-color: whitesmoke;
+  display: grid;
+  padding: 1.5rem;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.projects h2 {
+  padding: 1.5rem 0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.cards-container .card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-left: 8px solid black;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+.card .title {
+  cursor: pointer;
+}
+
+.card .text {
+  color: #999;
+}
+
+.card .card-actions {
+  align-self: flex-end;
+  padding-top: 1rem;
+  color: #999;
+}
+
+.card-actions button {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.card-actions button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all .2s ease;
+}
+
+.announcements :where(.announcement-list, .user-list) {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+  padding: 2rem;
+}
+
+.announcements h2 {
+  padding: 1.5rem 0;
+}
+
+.announcement-list .announcement {
+  padding: 1rem 0;
+  border-bottom: 1px solid #dbe2ec;
+}
+
+.announcement:first-child {
+  padding-top: 0;
+}
+
+.announcement:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+
+.announcement .title {
+  font-size: 0.9rem;
+}
+.announcement .text {
+  font-size: 0.8rem;
+  color: #999;
+}
