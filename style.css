@@ -153,8 +153,10 @@ body {
 
 .sidebar footer {
   display: flex;
+  padding-top: 15rem;
   align-items: center;
   color: #999;
+
 }
 
 .sidebar footer img {
