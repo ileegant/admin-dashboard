@@ -112,8 +112,15 @@ body {
 
 /* SIDEBAR STYLES */
 
-.sidebar {
+.sidebar-fixed {
   background-color: #333;
+  grid-area: sidebar;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -144,6 +151,16 @@ body {
   font-size: 1.25rem;
 }
 
+.sidebar footer {
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+
+.sidebar footer img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
 /* CONTENT STYLES */
 
