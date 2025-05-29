@@ -33,7 +33,7 @@ body {
   background-color: rgba(0, 0, 0, .05);
   padding-left: 1rem;
   border: none;
-  accent-color: #999;
+  accent-color: #4b8ffa;
   border-radius: 20px;
 }
 
@@ -73,23 +73,36 @@ body {
   display: flex;
   align-items: end;
   justify-content: flex-end;
-  gap: 40px;
+  gap: 1rem;
 }
 
 .action-buttons button {
   background-color: transparent;
   height: 2rem;
   width: 6rem;
-  border: none;
-  border-radius: 30px;
+  color: #999;
+  border: 1px solid #666;
+  border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
 }
 
 .action-buttons button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  color: #337ff8;
   transition: all .2s ease;
+  border-color: #337ff8;
+}
+
+.action-buttons .new-buuton {
+  background-color: #4b8ffa;
+  color: white;
+  border: none;
+}
+
+.action-buttons .new-buuton:hover {
+  background-color: #337ff8;
+  color: white;
 }
 
 .notifications {
@@ -101,6 +114,12 @@ body {
 
 .notifications span {
   font-size: 1.5rem;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.notifications span:hover {
+  color: #4b8ffa;
 }
 
 .notifications img {
@@ -108,7 +127,6 @@ body {
   height: 3rem;
   border-radius: 50%;
 }
-
 
 /* SIDEBAR STYLES */
 
@@ -133,30 +151,35 @@ body {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  gap: 1rem;
+  gap: .6rem;
 }
 
 .sidebar a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-left: 1rem;
 }
 
-.sidebar a:hover {
-  text-decoration: underline
+.sidebar li {
+  padding: .6rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .2s ease;
 }
 
-.sidebar li {
-  font-size: 1.25rem;
+.sidebar li:hover {
+  background-color: rgb(255, 255, 255, .1);
 }
 
 .sidebar footer {
   display: flex;
-  padding-top: 15rem;
   align-items: center;
-  color: #999;
-
+  color: #fff;
+  border-top:1px solid #fff;
+  padding-top: 1rem;
+  margin-top: 5rem;
 }
 
 .sidebar footer img {
@@ -198,7 +221,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   background-color: white;
-  border-left: 8px solid #333;
+  border-left: 8px solid #4b8ffa;
   border-radius: 6px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
   padding: 2rem;
@@ -216,10 +239,11 @@ body {
 .card .card-actions {
   align-self: end;
   padding-top: 1rem;
-  color: #999;
+  color: #333;
 }
 
 .card-actions button {
+  color: #666;
   width: 40px;
   height: 40px;
   font-size: 1.2rem;
@@ -232,6 +256,7 @@ body {
 }
 
 .card-actions button:hover {
+  color: #4b8ffa;
   background-color: rgba(0, 0, 0, 0.05);
   transition: all .2s ease;
 }
@@ -240,7 +265,7 @@ body {
   background-color: white;
   border-radius: 6px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .announcements {
@@ -274,13 +299,21 @@ body {
 .user-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: .6rem;
 }
 
 .user-list .user {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: .3rem .6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.user-list .user:hover {
+  background-color: #eee;
 }
 
 .user-list .user .username {
